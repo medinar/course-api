@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Sat Mar 14 15:44:32 PHT 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0170-d800-6fec-000005f28048 
-on database directory memory:/Users/rommelmedina/BDO/course-api-lessons/testdb with class loader sun.misc.Launcher$AppClassLoader@15db9742 
+Sat Mar 14 17:33:12 PHT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0170-d863-eba2-00000470fb80 
+on database directory memory:/Users/rommelmedina/BDO/course-api-actuator/testdb with class loader sun.misc.Launcher$AppClassLoader@15db9742 
 Loaded from file:/Users/rommelmedina/.m2/repository/org/apache/derby/derby/10.14.1.0/derby-10.14.1.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_161-b12
-user.dir=/Users/rommelmedina/BDO/course-api-lessons
+user.dir=/Users/rommelmedina/BDO/course-api-actuator
 os.name=Mac OS X
 os.arch=x86_64
 os.version=10.14.6

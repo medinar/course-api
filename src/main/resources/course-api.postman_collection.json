@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "016c2c25-45b1-44b5-b480-d052a21561c8",
+		"name": "course-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get topics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get java courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get java courses java-lambda lessons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses/java-lambda/lessons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses",
+						"java-lambda",
+						"lessons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get java courses java-lambda lessons functional-nterfaces",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses/java-lambda/lessons/functional-interfaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses",
+						"java-lambda",
+						"lessons",
+						"functional-interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get java courses java-lambda lessons dev-setup",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses/java-lambda/lessons/dev-setup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses",
+						"java-lambda",
+						"lessons",
+						"dev-setup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add topic java",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"java\",\n\t\"name\": \"Java\",\n\t\"description\": \"Java Description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add topic javascript",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"javascript\",\n\t\"name\": \"Javascript\",\n\t\"description\": \"Javascript Description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add topic javaee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"javaee\",\n\t\"name\": \"Javaee\",\n\t\"description\": \"Javaee Description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add java course java-stream",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"java-stream\",\n\t\"name\": \"Java-Stream\",\n\t\"description\": \"Java-Stream Description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add java course java-lambda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"java-lambda\",\n\t\"name\": \"Java-Lambda\",\n\t\"description\": \"Java-Lambda Description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add java course java-lambda lesson function-interfaces",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"functional-interfaces\",\n\t\"name\": \"Functional Interfaces\",\n\t\"description\": \"Funcational Interfaces Description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses/java-lambda/lessons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses",
+						"java-lambda",
+						"lessons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update java course java-lambda lesson function-interfaces",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"functional-interfaces\",\n\t\"name\": \"Updated Functional Interfaces\",\n\t\"description\": \"Updated Interfaces Description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses/java-lambda/lessons/functional-interfaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses",
+						"java-lambda",
+						"lessons",
+						"functional-interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete java course java-lambda lesson function-interfaces",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses/java-lambda/lessons/functional-interfaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses",
+						"java-lambda",
+						"lessons",
+						"functional-interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add java course java-lambda lesson dev-setup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"dev-setup\",\n\t\"name\": \"Dev Setup\",\n\t\"description\": \"Dev Setup Description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/course-api/topics/java/courses/java-lambda/lessons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"topics",
+						"java",
+						"courses",
+						"java-lambda",
+						"lessons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get metrics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course-api/actuator/metrics/jvm.memory.max",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course-api",
+						"actuator",
+						"metrics",
+						"jvm.memory.max"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
